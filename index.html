@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Useful Web Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #007bff;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            margin: 10px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #333;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            background: #007bff;
+            color: white;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        button {
+            background: #212a88;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #212a88;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #333;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+    <script>
+        function showMessage() {
+            document.getElementById('message').innerText = 'Welcome to my useful page!';
+            document.getElementById('message').style.display = 'block';
+        }
+
+        function message() {
+            alert("This alert box was called with the onload event");
+        }
+    </script>
+</head>
+<body onload="message()">
+
+<header>
+    <h1>Welcome to My Useful Page</h1>
+    <nav>
+        <a href="#section1">Section 1</a>
+        <a href="#section2">Section 2</a>
+        <a href="#section3">Section 3</a>
+    </nav>
+</header>
+
+<div class="container">
+    <section id="section1">
+        <h2>Section 1: The Importance of Healthy Nutrition</h2>
+        <p>Healthy nutrition is one of the key factors that contribute to improving the quality of life. Our diet directly affects our physical and mental health, making it essential to understand the importance of consuming healthy foods.</p>
+        <h3>Benefits of Healthy Nutrition</h3>
+        <ul>
+            <li>Boosting Immunity: Foods rich in vitamins and minerals support the immune system and help combat diseases.</li>
+            <li>Improving Mental Health: A balanced diet can enhance mood and reduce symptoms of depression and anxiety.</li>
+            <li>Maintaining Ideal Weight: Consuming low-calorie, fiber-rich foods helps control weight and prevent obesity.</li>
+            <li>Increasing Energy: Healthy foods provide the necessary energy for the body, enhancing activity and focus.</li>
+        </ul>
+        <p>Healthy nutrition is the foundation for a healthy and happy life. By making conscious dietary choices, everyone can improve their overall health and enjoy a life full of energy and vitality.</p>
+        <img src="image.jpeg" alt="Illustrative Image">
+    </section>
+
+    <section id="section2">
+        <h2>Section 2: A Useful List</h2>
+        <ul>
+            <li>First Point</li>
+            <li>Second Point</li>
+            <li>Third Point</li>
+        </ul>
+    </section>
+
+    <section id="section3">
+        <h2>Section 3: Interact with the Button</h2>
+        <p>Click the button below to receive a welcome message!</p>
+        <button onclick="showMessage()">Click Here</button>
+        <p id="message" style="display:none;"></p>
+    </section>
+</div>
+
+<footer>
+    <p>All rights reserved &copy; 2024</p>
+</footer>
+
+</body>
+</html>
