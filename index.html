@@ -73,6 +73,23 @@
             bottom: 0;
             width: 100%;
         }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #007bff;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
     </style>
     <script>
         function showMessage() {
@@ -118,6 +135,34 @@
             <li>Second Point</li>
             <li>Third Point</li>
         </ul>
+        
+        <h3>Healthy Foods Table</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Food Item</th>
+                    <th>Benefits</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Broccoli</td>
+                    <td>Rich in vitamins K and C, fiber, and antioxidants.</td>
+                </tr>
+                <tr>
+                    <td>Salmon</td>
+                    <td>High in omega-3 fatty acids, supports heart health.</td>
+                </tr>
+                <tr>
+                    <td>Quinoa</td>
+                    <td>Complete protein source, high in fiber and gluten-free.</td>
+                </tr>
+                <tr>
+                    <td>Blueberries</td>
+                    <td>High in antioxidants, good for brain health.</td>
+                </tr>
+            </tbody>
+        </table>
     </section>
 
     <section id="section3">
